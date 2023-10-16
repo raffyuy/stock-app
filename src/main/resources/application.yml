@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  sql:
+    init:
+      platform: h2
+      mode: always
+  h2:
+    console:
+      enabled: true
+      path: /h2-ui
+  jpa:
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  profiles:
+    active: dev #change this to disable Data Initialisation
+
+app:
+  data:
+    init-csv-path: input.csv
+  security:
+    cors:
+      allowed-origins: http://localhost:3000

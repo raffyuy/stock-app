@@ -1,0 +1,11 @@
+services:
+  nodejs-ui:
+    build:
+      context: ./ui
+    ports:
+      - "3000:3000"
+  stock-api:
+    build:
+      context: ./
+    ports:
+      - "8080:8080"
