@@ -1,8 +1,11 @@
 
+Note: This is a copy of my submission in BitBucket. My commit history is not here. 
 # Stock API Coding Exercise
 
+
+
 This is Rafael Uy's submission for the Atlas Carbon coding exercise. Note that I have moved the
-original [README.md](./project-brief.md)
+original project brief [README.md](./project-brief.md) 
 
 The challenge involves implementing an API backend for creating monthly summaries 
 for stocks that will integrate with the provided UI as described in [feature-file.md](./feature-file.md)
